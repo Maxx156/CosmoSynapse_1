@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CosmoSynapse — Главная</title>
+    <meta
+      name="description"
+      content="CosmoSynapse — открытая, живая цифровая энциклопедия космических знаний: верифицированные статьи, открытые данные, сообщество и инструменты исследования."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-cs-page="home">
+    <header class="cs-header">
+      <div class="cs-container cs-header-inner">
+        <a class="cs-logo" href="home.html" aria-label="CosmoSynapse — главная">
+          <span class="cs-logo-mark">∞</span>
+          <div class="cs-logo-text">
+            <span class="cs-logo-title">CosmoSynapse</span>
+            <span class="cs-logo-subtitle">Живая энциклопедия космоса</span>
+          </div>
+        </a>
+        <nav class="cs-nav">
+          <a href="#mission">Идея</a>
+          <a href="#architecture">Архитектура</a>
+          <a href="#principles">Принципы</a>
+          <a href="#challenges">Вызовы</a>
+          <a href="contact.html">Обратная связь</a>
+          <button type="button" class="cs-nav-cta cs-linklike" id="cs-logout-btn">
+            Выйти
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="cs-section cs-hero" id="top">
+        <div class="cs-container cs-hero-inner">
+          <div class="cs-hero-text">
+            <p class="cs-eyebrow">Открытая платформа космических знаний</p>
+            <h1>
+              CosmoSynapse —<br />
+              мост между мечтой и знанием
+            </h1>
+            <p class="cs-hero-subtitle">
+              Цифровая, постоянно обновляемая энциклопедия о космосе, где
+              школьники, ученые и инженеры объединяют знания, данные и идеи в
+              единой живой экосистеме.
+            </p>
+            <div class="cs-hero-actions">
+              <a href="#join" class="cs-btn cs-btn-primary">Стать соавтором</a>
+              <a href="#mission" class="cs-btn cs-btn-ghost">Узнать суть идеи</a>
+            </div>
+            <div class="cs-hero-tags">
+              <span>Верифицированные знания</span>
+              <span>Открытые данные</span>
+              <span>Сообщество</span>
+              <span>Инструменты</span>
+            </div>
+            <p class="cs-note cs-userline">
+              Вы вошли как <span id="cs-user-name">пользователь</span>.
+            </p>
+          </div>
+          <div class="cs-hero-visual" aria-hidden="true">
+            <div class="cs-orbit cs-orbit-outer"></div>
+            <div class="cs-orbit cs-orbit-middle"></div>
+            <div class="cs-orbit cs-orbit-inner"></div>
+            <div class="cs-planet cs-planet-main"></div>
+            <div class="cs-planet cs-planet-small cs-planet-1"></div>
+            <div class="cs-planet cs-planet-small cs-planet-2"></div>
+            <div class="cs-planet cs-planet-small cs-planet-3"></div>
+            <div class="cs-hero-glow"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission / Essence -->
+      <section class="cs-section" id="mission">
+        <div class="cs-container cs-two-column">
+          <div>
+            <h2>Суть CosmoSynapse</h2>
+            <p class="cs-lead">
+              Мы живем в эпоху, когда космических данных и исследований больше,
+              чем когда-либо, но они рассеяны по архивам, PDF и закрытым
+              порталам. CosmoSynapse рождается как ответ на эту разобщенность.
+            </p>
+          </div>
+          <div class="cs-grid cs-grid-2">
+            <div class="cs-card cs-card-soft">
+              <h3>Единая цифровая энциклопедия</h3>
+              <p>
+                Одна платформа, собирающая знания о Вселенной: от основ
+                орбитальной механики до истории автоматических и пилотируемых
+                миссий.
+              </p>
+            </div>
+            <div class="cs-card cs-card-soft">
+              <h3>Живая экосистема</h3>
+              <p>
+                Не статичный сайт со статьями, а постоянно растущая и
+                рецензируемая среда, где новые данные, проекты и идеи сразу
+                находят свое место.
+              </p>
+            </div>
+            <div class="cs-card cs-card-soft">
+              <h3>Связь между людьми и данными</h3>
+              <p>
+                Школьники, студенты, инженеры, ученые и популяризаторы работают
+                вместе, используя общую «почву» проверенных знаний и открытых
+                архивов.
+              </p>
+            </div>
+            <div class="cs-card cs-card-soft">
+              <h3>Импульс к сотрудничеству</h3>
+              <p>
+                CosmoSynapse задуман как «синапс» — место передачи импульса,
+                где индивидуальные проекты перестают существовать в вакууме и
+                становятся частью совместного движения.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Architecture -->
+      <section class="cs-section cs-section-alt" id="architecture">
+        <div class="cs-container">
+          <div class="cs-section-header">
+            <h2>Архитектура платформы</h2>
+            <p>
+              CosmoSynapse задуман как многослойная система, где каждый уровень
+              усиливает другие.
+            </p>
+          </div>
+
+          <div class="cs-architecture-layout">
+            <div class="cs-architecture-graph">
+              <div class="cs-arch-layer cs-arch-core">
+                <span class="cs-arch-label">Ядро</span>
+                <span class="cs-arch-title">Верифицированная энциклопедия</span>
+              </div>
+              <div class="cs-arch-layer cs-arch-data">
+                <span class="cs-arch-label">Слой данных</span>
+                <span class="cs-arch-title">«Открытый ЦУП»</span>
+              </div>
+              <div class="cs-arch-layer cs-arch-community">
+                <span class="cs-arch-label">Сообщество</span>
+                <span class="cs-arch-title">«Космический Гильдхолл»</span>
+              </div>
+              <div class="cs-arch-layer cs-arch-tools">
+                <span class="cs-arch-label">Инструменты</span>
+                <span class="cs-arch-title">Симуляторы и калькуляторы</span>
+              </div>
+            </div>
+
+            <div class="cs-architecture-details">
+              <article class="cs-card cs-card-outline">
+                <h3>1. Ядро — Верифицированная Энциклопедия</h3>
+                <p>
+                  База знаний по принципу вики с усиленной рецензией: ключевые
+                  статьи по фундаментальным темам проходят проверку
+                  приглашённых экспертов — ученых, преподавателей и
+                  популяризаторов.
+                </p>
+                <ul class="cs-list">
+                  <li>Строгая структура и единые стандарты оформления.</li>
+                  <li>История правок и прозрачная экспертиза изменений.</li>
+                  <li>Уровни сложности: от базового до профессионального.</li>
+                </ul>
+              </article>
+
+              <article class="cs-card cs-card-outline">
+                <h3>2. Слой данных — «Открытый ЦУП»</h3>
+                <p>
+                  Централизованный доступ к открытым данным: траектории
+                  аппаратов, каталоги запусков, архивы астрономических
+                  наблюдений и телеметрии.
+                </p>
+                <ul class="cs-list">
+                  <li>Интеграция с открытыми API (например, NASA, ESA и др.).</li>
+                  <li>
+                    Визуализация — интерактивные карты, временные шкалы,
+                    фильтрация по параметрам.
+                  </li>
+                  <li>
+                    Единая точка доступа к оцифрованным архивам миссий и
+                    обсерваторий.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="cs-card cs-card-outline">
+                <h3>3. Сообщество — «Космический Гильдхолл»</h3>
+                <p>
+                  Пространство для обсуждений, блогов, презентации проектов и
+                  поиска единомышленников.
+                </p>
+                <ul class="cs-list">
+                  <li>Форумы и тематические каналы обсуждений.</li>
+                  <li>Публичные профили и портфолио проектов.</li>
+                  <li>
+                    Система репутации и ролей без подавления инициативы
+                    участников.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="cs-card cs-card-outline">
+                <h3>4. Инструментальный слой</h3>
+                <p>
+                  Набор интерактивных инструментов, превращающих чтение в
+                  исследование.
+                </p>
+                <ul class="cs-list">
+                  <li>Калькуляторы орбит и параметров полёта.</li>
+                  <li>Симуляторы гравитации и визуализации траекторий.</li>
+                  <li>Карты Луны, Марса и звездного неба.</li>
+                  <li>Простые конструкторы для моделирования систем.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Principles -->
+      <section class="cs-section" id="principles">
+        <div class="cs-container">
+          <div class="cs-section-header">
+            <h2>Принципы проекта</h2>
+            <p>
+              Эти основы определяют, как развивается CosmoSynapse и какое
+              сообщество мы строим вокруг него.
+            </p>
+          </div>
+
+          <div class="cs-grid cs-grid-4">
+            <article class="cs-card cs-card-principle">
+              <h3>Открытость и бесплатность</h3>
+              <p>
+                CosmoSynapse изначально задуман как открытый ресурс без платных
+                подписок: доступ к знаниям о Вселенной должен быть свободным
+                для всех.
+              </p>
+            </article>
+
+            <article class="cs-card cs-card-principle">
+              <h3>Коллаборация</h3>
+              <p>
+                Платформа международная и междисциплинарная по своей природе.
+                Ее нельзя построить усилиями одной страны, организации или
+                отдельного человека.
+              </p>
+            </article>
+
+            <article class="cs-card cs-card-principle">
+              <h3>Научная добросовестность</h3>
+              <p>
+                Четкое разграничение проверенных фактов, гипотез и
+                спекулятивных идей. Борьба с лженаукой через аргументы, ссылки
+                и прозрачную рецензию, а не через «запретные темы».
+              </p>
+            </article>
+
+            <article class="cs-card cs-card-principle">
+              <h3>Инклюзивность</h3>
+              <p>
+                Материал подается на разных уровнях сложности — от простых
+                объяснений «с нуля» до технических спецификаций и исходных
+                данных для профессионалов.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Challenges & current work -->
+      <section class="cs-section cs-section-alt" id="challenges">
+        <div class="cs-container cs-two-column">
+          <div>
+            <h2>Текущие вызовы и работа над прототипом</h2>
+            <p class="cs-lead">
+              CosmoSynapse сейчас находится на этапе глубокого проектирования и
+              создания минимально жизнеспособного прототипа (MVP).
+            </p>
+          </div>
+
+          <div class="cs-timeline">
+            <div class="cs-timeline-item">
+              <div class="cs-timeline-marker"></div>
+              <div class="cs-timeline-content">
+                <h3>Техническая архитектура</h3>
+                <p>
+                  Проектирование структуры баз данных для разнородной
+                  информации и выбор открытых API для данных в реальном
+                  времени.
+                </p>
+                <ul class="cs-list">
+                  <li>Модели для статей, проектов, обсуждений и данных миссий.</li>
+                  <li>Интеграция с существующими открытыми космическими API.</li>
+                  <li>Подготовка архитектуры для масштабируемого backend.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cs-timeline-item">
+              <div class="cs-timeline-marker"></div>
+              <div class="cs-timeline-content">
+                <h3>Модерация и верификация</h3>
+                <p>
+                  Поиск баланса между свободой участия и надежностью ядра
+                  знаний.
+                </p>
+                <ul class="cs-list">
+                  <li>Дизайн системы ролей: авторы, рецензенты, кураторы.</li>
+                  <li>Механики репутации и «веса» правок.</li>
+                  <li>
+                    Понятные пользователю метки статей: «проверено», «в
+                    рецензии», «гипотеза», «обсуждается».
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cs-timeline-item">
+              <div class="cs-timeline-marker"></div>
+              <div class="cs-timeline-content">
+                <h3>Масштабируемость и юридические аспекты</h3>
+                <p>
+                  Работа с авторскими правами, лицензиями и международными
+                  требованиями к данным.
+                </p>
+                <ul class="cs-list">
+                  <li>Опора на лицензии Creative Commons для текстов и медиа.</li>
+                  <li>
+                    Ясные правила атрибуции для исследований, миссий и
+                    изображений.
+                  </li>
+                  <li>Подготовка к международному развитию платформы.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cs-timeline-item cs-timeline-item-current">
+              <div class="cs-timeline-marker"></div>
+              <div class="cs-timeline-content">
+                <h3>Текущий статус</h3>
+                <p>
+                  Создается каркас сайта на современном стеке, продумывается
+                  структура баз данных и пишется техническое задание для первых
+                  версий платформы.
+                </p>
+                <p class="cs-note">
+                  Проект — не спринт, а марафон. Первый шаг — прототип,
+                  следующий — сообщество людей, готовых помочь его запустить.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to action -->
+      <section class="cs-section" id="join">
+        <div class="cs-container cs-cta">
+          <div>
+            <h2>Присоединяйтесь к созданию CosmoSynapse</h2>
+            <p class="cs-lead">
+              CosmoSynapse — это не личный проект и не закрытая платформа. Это
+              общая идея и открытая инициатива, к которой может присоединиться
+              каждый, кому небезразлично будущее космонавтики и науки.
+            </p>
+          </div>
+
+          <div class="cs-grid cs-grid-3 cs-cta-grid">
+            <div class="cs-card cs-card-soft">
+              <h3>Если вы разработчик</h3>
+              <p>
+                Помогите спроектировать архитектуру, реализовать прототип,
+                интегрировать открытые API и построить удобный интерфейс для
+                исследователей.
+              </p>
+            </div>
+            <div class="cs-card cs-card-soft">
+              <h3>Если вы ученый или преподаватель</h3>
+              <p>
+                Станьте экспертами и кураторами направлений, помогите выстроить
+                систему рецензирования и подготовьте базовый корпус статей.
+              </p>
+            </div>
+            <div class="cs-card cs-card-soft">
+              <h3>Если вы школьник или студент</h3>
+              <p>
+                Привносите свои проекты, задавайте вопросы, тестируйте
+                инструменты и помогайте сделать сложные темы понятными новичкам.
+              </p>
+            </div>
+          </div>
+
+          <div class="cs-cta-footer">
+            <p>
+              На этом этапе лучший способ присоединиться — выйти на связь,
+              поделиться опытом и предложить помощь.
+            </p>
+            <p class="cs-note">
+              Для предложений и вопросов используйте страницу
+              <a class="cs-inline-link" href="contact.html">обратной связи</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="cs-footer">
+      <div class="cs-container cs-footer-inner">
+        <div class="cs-footer-brand">
+          <span class="cs-logo-mark">∞</span>
+          <span class="cs-footer-title">CosmoSynapse</span>
+        </div>
+        <p class="cs-footer-text">
+          «Чтобы вырастить сад человечества как планеты-сада, нам нужна общая
+          почва знаний. Давайте создадим её вместе».
+        </p>
+        <p class="cs-footer-meta">
+          Концепт-платформа, вдохновленная дискуссиями на «Жуковских чтениях».
+        </p>
+      </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CosmoSynapse — Обратная связь</title>
+    <meta
+      name="description"
+      content="Форма обратной связи CosmoSynapse: вопросы, предложения, сотрудничество."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-cs-page="contact">
+    <header class="cs-header">
+      <div class="cs-container cs-header-inner">
+        <a class="cs-logo" href="home.html" aria-label="CosmoSynapse — главная">
+          <span class="cs-logo-mark">∞</span>
+          <div class="cs-logo-text">
+            <span class="cs-logo-title">CosmoSynapse</span>
+            <span class="cs-logo-subtitle">Обратная связь</span>
+          </div>
+        </a>
+        <nav class="cs-nav">
+          <a href="home.html">Главная</a>
+          <a href="contact.html" class="is-active">Обратная связь</a>
+          <button type="button" class="cs-nav-cta cs-linklike" id="cs-logout-btn">
+            Выйти
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="cs-auth">
+      <div class="cs-container">
+        <div class="cs-auth-card cs-card cs-card-soft">
+          <h1>Форма обратной связи</h1>
+          <p class="cs-lead">
+            Напишите вопрос, предложение или идею для развития CosmoSynapse.
+          </p>
+          <p class="cs-note">
+            Вы вошли как <span id="cs-user-name">пользователь</span>.
+          </p>
+
+          <form id="cs-contact-form" class="cs-form">
+            <div class="cs-field">
+              <label for="cs-email">Ваша почта</label>
+              <input
+                id="cs-email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="cs-field">
+              <label for="cs-topic">Тема</label>
+              <input
+                id="cs-topic"
+                name="topic"
+                type="text"
+                placeholder="Например: идеи по системе рецензирования"
+                minlength="3"
+                required
+              />
+            </div>
+
+            <div class="cs-field">
+              <label for="cs-message">Сообщение</label>
+              <textarea
+                id="cs-message"
+                name="message"
+                rows="6"
+                placeholder="Опишите, что вы предлагаете или о чём хотите спросить…"
+                minlength="10"
+                required
+              ></textarea>
+            </div>
+
+            <p class="cs-form-error" hidden></p>
+            <p class="cs-form-success" hidden></p>
+
+            <div class="cs-form-actions">
+              <button class="cs-btn cs-btn-primary" type="submit">Отправить</button>
+              <a class="cs-btn cs-btn-ghost" href="home.html">Вернуться на главную</a>
+            </div>
+
+            <p class="cs-note">
+              В прототипе сообщения сохраняются локально в вашем браузере.
+              (Позже можно подключить отправку на почту/в Telegram/в backend.)
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
+
